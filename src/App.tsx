@@ -12,8 +12,9 @@ function App() {
 
 
   const handleSubmit = async (data: any) => {
+    console.log(process.env.REACT_APP_OPENAI_KEY);
     try {
-      const apiKey = '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';
+      const apiKey = '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';
       const response = await fetch(
         'https://api.openai.com/v1/chat/completions',
         {
